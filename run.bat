@@ -1,9 +1,12 @@
 @Echo off
-cd Engine
+cd Destiny
 :COMPILE
-g++ src/Engine/EntryPoint.cpp -o bin/Engine.exe
+echo .
+echo .
+echo .
+g++ src/Destiny/EntryPoint.cpp -o bin/Destiny.exe
 cd bin
-Engine.exe
+Destiny.exe
 cd ..
 pause
 goto COMPILE

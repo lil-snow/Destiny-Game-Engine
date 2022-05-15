@@ -1,12 +1,7 @@
 #include <iostream>
-#include "Engine.h"
+#include "Platform.h"
 
-#if defined(EN_PLATFORM_WINDOWS)
 int main() {
-	std::cout << "Hello World!" << std::endl;
+	std::cout << Destiny::GetPlatformName() << std::endl;
 }
-#else
-int main() {
-	std::cout << "Unknown Platform" << std::endl;
-}
-#endif
+
